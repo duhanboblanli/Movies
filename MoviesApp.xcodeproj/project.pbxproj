@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		8D7ACB6224D1E5A700644453 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ACB6124D1E5A700644453 /* ImageLoader.swift */; };
 		8D7ACB6424D1E5D300644453 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7ACB6324D1E5D300644453 /* URLImage.swift */; };
 		FEA9AE952A9E577F005645F4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA9AE942A9E577F005645F4 /* Movie.swift */; };
+		FEA9AE972A9E9F84005645F4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA9AE962A9E9F84005645F4 /* HTTPClient.swift */; };
+		FEA9AE992A9EB475005645F4 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA9AE982A9EB475005645F4 /* URL+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		8D7ACB6124D1E5A700644453 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		8D7ACB6324D1E5D300644453 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		FEA9AE942A9E577F005645F4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FEA9AE962A9E9F84005645F4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		FEA9AE982A9EB475005645F4 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		8D7ACB5624D1E4E800644453 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FEA9AE982A9EB475005645F4 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		8D7ACB5924D1E50B00644453 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FEA9AE962A9E9F84005645F4 /* HTTPClient.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -188,8 +194,9 @@
 		8D7ACB3524D1E4B100644453 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Mohammad Azam";
 				TargetAttributes = {
 					8D7ACB3C24D1E4B100644453 = {
@@ -238,7 +245,9 @@
 				8D7ACB5D24D1E54500644453 /* Rating.swift in Sources */,
 				8D7ACB6224D1E5A700644453 /* ImageLoader.swift in Sources */,
 				8D7ACB4124D1E4B100644453 /* AppDelegate.swift in Sources */,
+				FEA9AE972A9E9F84005645F4 /* HTTPClient.swift in Sources */,
 				8D7ACB4324D1E4B100644453 /* SceneDelegate.swift in Sources */,
+				FEA9AE992A9EB475005645F4 /* URL+Extensions.swift in Sources */,
 				FEA9AE952A9E577F005645F4 /* Movie.swift in Sources */,
 				8D7ACB4524D1E4B100644453 /* ContentView.swift in Sources */,
 			);
@@ -284,6 +293,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -344,6 +354,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
