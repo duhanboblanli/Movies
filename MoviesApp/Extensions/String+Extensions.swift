@@ -10,6 +10,7 @@ import Foundation
 
 extension String {
     
+    // Search işleminde boşlukları engellemek için
     func trimmedAndEscaped() -> String {
         
         let trimmedString = self.trimmingCharacters(in: .whitespacesAndNewlines )

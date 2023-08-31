@@ -10,13 +10,14 @@ import SwiftUI
 
 struct MovieListView: View {
     
-    // Verilen movies listesinin başlıklarını döndürür
+    // MovieListViewModel'daki @Published movies ile aynı liste
+    // Orada güncellenirse burada da değişir, yani searchleme işlemine göre model güncellenir ve burada kullanılır
     let movies: [MovieViewModel]
     
     var body: some View {
         List(self.movies, id: \.imdbId) { movie in
             NavigationLink(destination: MovieDetailScreen(imdbId: movie.imdbId)) {
-                MovieCell(movie: movie)
+                MovieCell(movie: movie) // Cell'e tıklanırsa detail screen açılır
             }
         }
     }

@@ -29,8 +29,7 @@ class ImageLoader: ObservableObject {
                 self.downloadedData = data
             }
             
-        }.resume()
-        
+        }.resume()    
     }
     
 }

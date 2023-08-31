@@ -10,9 +10,11 @@ import SwiftUI
 
 struct MovieDetailView: View {
     
+    // Cell'e tıklanan movie'nin detayları bu modelde güncellenir ve burada kullanılır
     let movieDetailVM: MovieDetailViewModel
     
     var body: some View {
+        
         ScrollView {
             
             VStack(alignment: .leading, spacing: 10) {
